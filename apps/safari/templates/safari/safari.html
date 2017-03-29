@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Safari Zone</title>
+    </head>
+    <body>
+        <h1>Safari Zone</h1>
+        <div class="area_box">
+            <form action="/safari/beach" method="post">
+                {% csrf_token %}
+                <p>Go to the Beach</p>
+                <p>Lose ___ steps </p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="area_box">
+            <form action="/safari/cave" method="post">
+                {% csrf_token %}
+                <p>Go to the Cave</p>
+                <p>Lose ___ steps </p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="area_box">
+            <form action="/safari/forest" method="post">
+                {% csrf_token %}
+                <p>Go to the Forest</p>
+                <p>Lose ___ steps </p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="area_box">
+            <form action="/safari/Trail" method="post">
+                {% csrf_token %}
+                <p>Walk Along the Trail</p>
+                <p>Lose ___ steps </p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

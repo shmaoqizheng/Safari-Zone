@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        {% if zone == 'beach' %}
+            PICTURE OF BEACH
+        {% elif zone == 'cave'%}
+            PICTURE OF CAVE
+        {% elif zone == 'forest' %}
+            SOME FOREST
+        {% elif zone == 'trail' %}
+            Lonley Trail
+        {% endif %}
+        <div class="findPokemon">
+            <form action="/findPokemon/grass" method="post">
+                {% csrf_token %}
+                <p>Take a walk in Tall Grass</p>
+                <p>Lose __ steps</p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <!-- Code for other locations for finding pokemon -->
+        <!-- <div class="findPokemon">
+            <form action="/findPokemon/grass" method="post">
+                {% csrf_token %}
+                <p>Take a walk in Tall Grass</p>
+                <p>Lose __ steps</p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="findPokemon">
+            <form action="/findPokemon/grass" method="post">
+                {% csrf_token %}
+                <p>Take a walk in Tall Grass</p>
+                <p>Lose __ steps</p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="findPokemon">
+            <form action="/findPokemon/grass" method="post">
+                {% csrf_token %}
+                <p>Take a walk in Tall Grass</p>
+                <p>Lose __ steps</p>
+                <input type="submit" value="Submit">
+            </form>
+        </div> -->
+    </body>
+</html>

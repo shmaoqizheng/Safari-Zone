@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <div class="pokemonSprite">
+            <img src="" alt="Pokemon Sprite">
+        </div>
+        <div class="playerSprite">
+            <img src="" alt="Player Sprite">
+        </div>
+        <div class="playerActions">
+            <div class="actions">
+                <form action="/battle" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="bait">
+                    <input type="submit" value="Bait">
+                </form>
+                <form action="/battle" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="rock">
+                    <input type="submit" value="Rock">
+                </form>
+                <form action="/battle" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="Pokeball">
+                    <input type="submit" value="pokeball">
+                </form>
+                <form action="/battle" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="run">
+                    <input type="submit" value="Run">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
